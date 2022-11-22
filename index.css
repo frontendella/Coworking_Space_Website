@@ -1,15 +1,13 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  color: #282828;
 }
+
 header {
   background-color: #282828;
-  color: white;
+  color: whitesmoke;
 }
 
 .logo {
@@ -17,12 +15,12 @@ header {
   font-weight: 700;
 }
 
-header nav ul {
+ul {
   display: flex;
+  list-style-type: none;
   align-items: center;
   margin: 0;
   padding: 25px;
-  list-style: none;
   gap: 10px;
 }
 
@@ -32,6 +30,10 @@ li {
 
 .icon {
   width: 25px;
+}
+
+.align-right {
+  margin-left: auto;
 }
 
 h1 {
@@ -45,45 +47,46 @@ h1 {
 }
 
 .item-img {
-  width: 100%;
   display: block;
+  width: 100%;
 }
 
-.align-right {
-  margin-left: auto;
+.caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 25px;
 }
 
 .img-banner {
-  background-color: #cd6858;
-  padding: 10px;
-  border: 2px solid grey;
   position: absolute;
   top: 0;
   left: 0;
-  text-align: center;
+  background-color: #cd6858;
   color: whitesmoke;
+  padding: 10px;
 }
+
 button {
+  align-self: center;
   border: none;
   background-color: #cd6858;
   color: whitesmoke;
   padding: 10px 15px;
   font-weight: 700;
   cursor: pointer;
-  margin: auto;
 }
 
-.caption {
-  margin: 0 auto 0 25px;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-.chatbox-img {
-  width: 50%;
-  margin: auto;
-}
 .chatbox-bg {
+  /*
+Challenge:
+1. Position the chatbox in the bottom 
+ corner of the window, 6px from bottom
+ and 6px from the right. 
+*/
+  position: fixed;
+  bottom: 6px;
+  right: 6px;
   background-color: #dda15e;
   width: 40px;
   height: 40px;
@@ -91,7 +94,9 @@ button {
   cursor: pointer;
   box-shadow: 1px 1px 5px #999;
   display: flex;
-  position: fixed;
-  bottom: 6px;
-  right: 6px;
+}
+
+.chatbox-img {
+  margin: auto;
+  width: 50%;
 }
