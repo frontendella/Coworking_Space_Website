@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  background-color: #282828;
+  color: white;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 25px;
+  list-style: none;
+  gap: 10px;
+}
+
+li {
+  cursor: pointer;
+}
+
+.icon {
+  width: 25px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 30px 25px;
+}
+
+.item {
+  position: relative;
+}
+
+.item-img {
+  width: 100%;
+  display: block;
+}
+
+.align-right {
+  margin-left: auto;
+}
+
+.img-banner {
+  background-color: #cd6858;
+  padding: 10px;
+  border: 2px solid grey;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: whitesmoke;
+}
+button {
+  border: none;
+  background-color: #cd6858;
+  color: whitesmoke;
+  padding: 10px 15px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: auto;
+}
+
+.caption {
+  margin: 0 auto 0 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.chatbox-img {
+  width: 50%;
+  margin: auto;
+}
+.chatbox-bg {
+  background-color: #dda15e;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #999;
+  display: flex;
+  position: fixed;
+  bottom: 6px;
+  right: 6px;
+}
