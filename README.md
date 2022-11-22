@@ -6,9 +6,9 @@ Simple website built with CSS (align-self, position: fixed, position: absolute &
 ## Description: 
 
 * Using margin: auto on flex children
-* position: absolute & relative
+* Position: absolute & relative
 * Align-self
-* position: fixed
+* Position: fixed
 
 
 
